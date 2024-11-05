@@ -8,7 +8,7 @@ import replace from '@rollup/plugin-replace'
 import svgr from '@svgr/rollup'
 import { terser } from 'rollup-plugin-terser'
 import url from '@rollup/plugin-url'
-import pkg from './package.json'
+import pkg from './package.json' assert { type: 'json' };
 
 const plugins = [
 	peerExternals(),
